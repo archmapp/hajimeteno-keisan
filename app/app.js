@@ -51,7 +51,7 @@ function App() {
 							</nav>{' '}
 							{/* </div> */}
 							<SlideRoutes location={location} duration={500} className="mb-1">
-								<Route path="/" exact component={Main} className="mt-1" />
+								<Route path="/" exact component={Main} className="active mt-1" />
 
 								<Route path="/about" component={About} />
 							</SlideRoutes>
