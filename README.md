@@ -1,4 +1,8 @@
+https://archmapp.github.io/hajimeteno-keisan/
 
+
+ty7575au@yahoo.co.jp
+https://app.netlify.com/sites/affectionate-wozniak-de01a2/overview
 
 詳しいソース情報：
 devtool: 'eval-source-map',

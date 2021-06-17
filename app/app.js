@@ -1,7 +1,7 @@
 import './styles/main.scss'
 
 import SlideRoutes from 'react-slide-routes'
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import {
 	BrowserRouter as Router,
@@ -16,6 +16,10 @@ import About from './components/About'
 
 function App() {
 	const location = useLocation()
+
+	useEffect(() => {
+		// $$.qcL('#slide-main', 'active', 'add')
+	}, [])
 
 	return (
 		<>
@@ -51,7 +55,7 @@ function App() {
 							</nav>{' '}
 							{/* </div> */}
 							<SlideRoutes location={location} duration={500} className="mb-1">
-								<Route path="/" exact component={Main} className="active mt-1" />
+								<Route path="/" exact component={Main} className="active mt-1" id="slide-main"/>
 
 								<Route path="/about" component={About} />
 							</SlideRoutes>

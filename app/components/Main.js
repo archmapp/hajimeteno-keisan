@@ -22,6 +22,8 @@ function Main() {
 	useEffect(() => {
 		const lS = JSON.parse(localStorage.getItem("opes"))
 		if (lS) setOpes(lS)
+
+		// $$.qcL('#slide-main', 'active', 'add')
 	}, [])
 
 	useEffect(() => {
