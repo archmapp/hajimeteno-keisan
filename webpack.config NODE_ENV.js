@@ -7,8 +7,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
-const currentTask = process.env.npm_lifecycle_event
-const isDev = currentTask === 'build' ? false : true
+const mode = process.env.NODE_ENV.trim() || 'development'
+const isDev = mode === 'development'
 
 let config = {
 	mode: isDev ? 'development' : 'production',
