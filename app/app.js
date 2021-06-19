@@ -16,8 +16,16 @@ import About from './components/About'
 
 function App() {
 	const location = useLocation()
+	const link0 = useRef(null)
+	// console.log(link0)
+	// setTimeout(()=>console.log(link0), 2000)
+	// console.log(link0.current)
+	// setTimeout(() => console.log(link0.current), 2000)
 
-	const currentStyle = {} // { color: 'Red' }
+	useEffect(() => {
+		$$.ocL(link0.current, 'active', 'add')
+	}, [])
+
 	return (
 		<>
 			<section className="section">
@@ -44,10 +52,10 @@ function App() {
 								</div>
 							</div>
 							<nav className="mt-2 mx-6 px-2 pt-1">
-								<NavLink to="/" exact activeStyle={currentStyle}>
+								<NavLink to="/" exact ref={link0}>
 									たし算・ひき算・かけ算
 								</NavLink>
-								<NavLink to="/about" activeStyle={currentStyle}>
+								<NavLink to="/about">
 									お知らせ
 								</NavLink>
 							</nav>{' '}

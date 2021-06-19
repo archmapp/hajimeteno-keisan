@@ -1,5 +1,9 @@
 https://archmapp.github.io/hajimeteno-keisan/
 
+	git add .
+	git commit -m "overlay"
+	git push origin main
+
 
 ty7575au@yahoo.co.jp
 https://app.netlify.com/sites/affectionate-wozniak-de01a2/overview
