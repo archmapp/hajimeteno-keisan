@@ -1,7 +1,7 @@
 import './styles/main.scss'
 
 import SlideRoutes from 'react-slide-routes'
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import {
 	BrowserRouter as Router,
@@ -17,10 +17,7 @@ import About from './components/About'
 function App() {
 	const location = useLocation()
 
-	useEffect(() => {
-		// $$.qcL('#slide-main', 'active', 'add')
-	}, [])
-
+	const currentStyle = {} // { color: 'Red' }
 	return (
 		<>
 			<section className="section">
@@ -46,18 +43,24 @@ function App() {
 									</div>
 								</div>
 							</div>
-							{/* <div className="section pt-3"> */}
 							<nav className="mt-2 mx-6 px-2 pt-1">
-								<NavLink to="/" exact>
+								<NavLink to="/" exact activeStyle={currentStyle}>
 									たし算・ひき算・かけ算
 								</NavLink>
-								<NavLink to="/about">お知らせ</NavLink>
+								<NavLink to="/about" activeStyle={currentStyle}>
+									お知らせ
+								</NavLink>
 							</nav>{' '}
-							{/* </div> */}
 							<SlideRoutes location={location} duration={500} className="mb-1">
-								<Route path="/" exact component={Main} className="active mt-1" id="slide-main"/>
+								<Route
+									path="/"
+									exact
+									component={Main}
+									className="active mt-1"
+								/>
 
 								<Route path="/about" component={About} />
+								<Route component={Main} />
 							</SlideRoutes>
 						</div>
 

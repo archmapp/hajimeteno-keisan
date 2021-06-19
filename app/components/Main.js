@@ -160,7 +160,7 @@ function Main() {
 						</div>
 
 						<form onSubmit={handleSubmit}>
-							<div className="field has-addons has-addons-centered">
+							<div className="field has-addons has-addons-centered py-2">
 								<div className="control">
 									<input
 										ref={answerField}
@@ -218,7 +218,7 @@ function Main() {
 							(mistakes == 3 || score >= MAX_COUNT ? ' overlay--visible' : '')
 						}
 					>
-						<div className="overlay-inner box p-6">
+						<div className="overlay-inner has-background-danger-light box p-6">
 							<div className="end-message mb-3">
 								{score >= MAX_COUNT ? (
 									<div className="notification is-info pt-3 pb-2">

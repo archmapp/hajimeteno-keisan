@@ -6,6 +6,7 @@ https://app.netlify.com/sites/affectionate-wozniak-de01a2/overview
 
 affectionate-wozniak-de01a2.netlify.app
 
+https://affectionate-wozniak-de01a2.netlify.app/
 
 
 
