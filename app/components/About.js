@@ -30,18 +30,18 @@ const About = (props) => {
 						<div className="message-header has-background-success-light">
 							<div className="is-size-6 has-text-black-ter">
 								参考： ( YOUTUBE )
-								<div className="mt-2">
+								<div className="mt-3 ml-3">
 									<a
 										href="https://www.youtube.com/watch?v=eddzBlXBl3Y"
-										className="has-text-centered"
+										className=""
 									>
-										<span className="is-size-6 has-text-success-dark has-text-centered">
-											React (Babel) and Sass webpack Tutorial{' '}
+										<span className="is-size-6 has-text-success-dark ">
+											React (Babel) and Sass webpack Tutorial へ 移動
 										</span>
-									</a>{' '}
-									へ 移動
+									</a>
+
 									<br />
-									<span className="has-text-black-ter ml-5">by </span>
+									<span className="has-text-black-ter ml-6">by </span>
 									<span className="is-size-5 has-text-primary-dark">
 										Brad LearnWebCode
 									</span>
@@ -54,18 +54,18 @@ const About = (props) => {
 						<div className="message-header has-background-success-light">
 							<div className="is-size-6 has-text-black-ter">
 								参考： ( YOUTUBE )
-								<div className="mt-2">
+								<div className="mt-3 ml-3">
 									<a
 										href="https://www.youtube.com/watch?v=w7ejDZ8SWv8"
-										className="has-text-centered"
+										className=""
 									>
-										<span className="is-size-6 has-text-success-dark has-text-centered">
-											React JS Crash Course 2021{' '}
+										<span className="is-size-6 has-text-success-dark ">
+											React JS Crash Course 2021 へ 移動
 										</span>
-									</a>{' '}
-									へ 移動
+									</a>
+
 									<br />
-									<span className="has-text-black-ter ml-5">by </span>
+									<span className="has-text-black-ter ml-6">by </span>
 									<span className="has-text-primary-dark has-text-weight-bold is-size-5 mt-4">
 										Brad Traversy Media
 									</span>
@@ -76,7 +76,7 @@ const About = (props) => {
 				</div>
 			</div>
 
-			<div className="has-text-centered mt-6">
+			<div className="box has-background-white-bis has-text-centered mt-6 pt-6">
 				<h4>
 					作成:　
 					<span className="has-text-weight-semibold has-text-success-dark">
@@ -84,8 +84,10 @@ const About = (props) => {
 					</span>
 					　<span className="has-text-weight-semibold">archmapp</span>
 				</h4>
-				<h4 className="mb-3">メール:　archmapp@i.softbank.jp</h4>
-				<Link to="/">戻る</Link>
+				<h4 className="my-4">メール:　archmapp@i.softbank.jp</h4>
+				<Link to="/" className="button is-outlined is-link">
+					戻る
+				</Link>
 			</div>
 		</article>
 	)

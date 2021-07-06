@@ -166,7 +166,7 @@ function Main() {
 										ref={answerField}
 										value={userAnswer}
 										onChange={(e) => setUserAnswer(e.target.value)}
-										type="text"
+										type="number"
 										className="input input-sel"
 										placeholder="答えの入力"
 										autoComplete="off"

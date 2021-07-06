@@ -31,17 +31,17 @@ let config = {
 		open: true,
 		hot: true,
 		writeToDisk: true,
-		// port: 3000,
-		// host: '0.0.0.0',
+		port: 3000,
+		host: '0.0.0.0',
 	},
 
 	module: {
 		rules: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-      },
+			{
+				test: /\.js$/,
+				loader: 'babel-loader',
+				exclude: /node_modules/,
+			},
 			{
 				// test: /\.css$/,
 				test: /\.css|\.scss$/,
@@ -87,6 +87,7 @@ let config = {
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './app/index.html',
+			favicon: './app/assets/img/faviconBulma.png',
 			// template: './src/index.html',
 		}),
 		// ~~~ By default, module resolution path is current folder (./**) and node_modules.
