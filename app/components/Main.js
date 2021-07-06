@@ -20,7 +20,7 @@ function Main() {
 	const [showError, setShowError] = useState(false)
 
 	useEffect(() => {
-		const lS = JSON.parse(localStorage.getItem("opes"))
+		const lS = JSON.parse(localStorage.getItem('opes'))
 		if (lS) setOpes(lS)
 
 		// $$.qcL('#slide-main', 'active', 'add')
@@ -103,45 +103,49 @@ function Main() {
 		<>
 			<article className="message is-primary py-4" id="b-r">
 				<div>
-					<div className="field pl-1">
-						<input
-							type="checkbox"
-							className="is-checkradio has-background-color is-info"
-							id="add"
-							name="add"
-							value="+"
-							checked={opes.includes('+')}
-							onChange={handleOpeClick}
-						/>
-						<label htmlFor="add" className="is-size-7-mobile">
-							たし算
-						</label>
-
-						<input
-							type="checkbox"
-							className="is-checkradio has-background-color is-warning"
-							id="sub"
-							name="sub"
-							value="-"
-							checked={opes.includes('-')}
-							onChange={handleOpeClick}
-						/>
-						<label htmlFor="sub" className="is-size-7-mobile">
-							ひき算
-						</label>
-
-						<input
-							type="checkbox"
-							className="is-checkradio has-background-color is-danger"
-							id="mul"
-							name="mul"
-							value="x"
-							checked={opes.includes('x')}
-							onChange={handleOpeClick}
-						/>
-						<label htmlFor="mul" className="is-size-7-mobile">
-							かけ算
-						</label>
+					<div className="field is-flex is-justify-content-center">
+						<div>
+							<input
+								type="checkbox"
+								className="is-checkradio has-background-color is-info"
+								id="add"
+								name="add"
+								value="+"
+								checked={opes.includes('+')}
+								onChange={handleOpeClick}
+							/>
+							<label htmlFor="add" className="is-size-7-mobile">
+								たし算
+							</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								className="is-checkradio has-background-color is-warning"
+								id="sub"
+								name="sub"
+								value="-"
+								checked={opes.includes('-')}
+								onChange={handleOpeClick}
+							/>
+							<label htmlFor="sub" className="is-size-7-mobile">
+								ひき算
+							</label>
+						</div>
+						<div>
+							<input
+								type="checkbox"
+								className="is-checkradio has-background-color is-danger"
+								id="mul"
+								name="mul"
+								value="x"
+								checked={opes.includes('x')}
+								onChange={handleOpeClick}
+							/>
+							<label htmlFor="mul" className="is-size-7-mobile">
+								かけ算
+							</label>
+						</div>
 					</div>
 					{/* <p>{opes}</p> */}
 
