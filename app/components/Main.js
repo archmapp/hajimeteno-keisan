@@ -103,7 +103,7 @@ function Main() {
 		<>
 			<article className="message is-primary py-4" id="b-r">
 				<div>
-					<div className="field ml-3">
+					<div className="field pl-1">
 						<input
 							type="checkbox"
 							className="is-checkradio has-background-color is-info"
