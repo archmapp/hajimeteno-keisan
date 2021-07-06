@@ -32,7 +32,7 @@ function App() {
 				<div className="container">
 					<div className="columns">
 						<div className="column"></div>
-						<div className="column is-size-6 is-8">
+						<div className="column is-size-6 is-10">
 							<div className="hero is-primary is-bold">
 								<div className="hero-body">
 									<div className="container">
