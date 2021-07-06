@@ -31,7 +31,7 @@ let config = {
 		open: true,
 		hot: true,
 		writeToDisk: true,
-		port: 3000,
+		port: 3001,
 		host: '0.0.0.0',
 	},
 

@@ -36,7 +36,7 @@ function App() {
 							<div className="hero is-primary is-bold">
 								<div className="hero-body">
 									<div className="container">
-										<h1 className="titleis-size-7-mobile">
+										<h1 className="title is-size-7-mobile">
 											<Link to="/">初めての【 けいさん 】</Link>
 										</h1>
 										<h2 className="subtitle is-size-4 has-text-centered mt-2">
