@@ -36,13 +36,13 @@ function App() {
 							<div className="hero is-primary is-bold">
 								<div className="hero-body">
 									<div className="container">
-										<h1 className="title">
+										<h1 className="titleis-size-7-mobile">
 											<Link to="/">初めての【 けいさん 】</Link>
 										</h1>
 										<h2 className="subtitle is-size-4 has-text-centered mt-2">
 											さんすう入門
 										</h2>
-										<h2 className="subtitle is-6 has-text-centered mt-2">
+										<h2 className="subtitle is-size-7-mobile has-text-centered mt-2">
 											~~ たし算・ひき算・かけ算 ~~
 										</h2>
 										<h3 className="subtitle has-text-white is-5">
@@ -51,13 +51,11 @@ function App() {
 									</div>
 								</div>
 							</div>
-							<nav className="mt-2 mx-6 px-2 pt-1">
+							<nav className="is-size-7-mobile mt-2 px-2 pt-1">
 								<NavLink to="/" exact ref={link0}>
 									たし算・ひき算・かけ算
 								</NavLink>
-								<NavLink to="/about">
-									お知らせ
-								</NavLink>
+								<NavLink to="/about">お知らせ</NavLink>
 							</nav>{' '}
 							<SlideRoutes location={location} duration={500} className="mb-1">
 								<Route

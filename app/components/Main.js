@@ -101,7 +101,7 @@ function Main() {
 
 	return (
 		<>
-			<article className="message is-primary py-5" id="b-r">
+			<article className="message is-primary py-4" id="b-r">
 				<div>
 					<div className="field ml-3">
 						<input
@@ -113,7 +113,9 @@ function Main() {
 							checked={opes.includes('+')}
 							onChange={handleOpeClick}
 						/>
-						<label htmlFor="add">たし算</label>
+						<label htmlFor="add" className="is-size-7-mobile">
+							たし算
+						</label>
 
 						<input
 							type="checkbox"
@@ -124,7 +126,9 @@ function Main() {
 							checked={opes.includes('-')}
 							onChange={handleOpeClick}
 						/>
-						<label htmlFor="sub">ひき算</label>
+						<label htmlFor="sub" className="is-size-7-mobile">
+							ひき算
+						</label>
 
 						<input
 							type="checkbox"
@@ -135,7 +139,9 @@ function Main() {
 							checked={opes.includes('x')}
 							onChange={handleOpeClick}
 						/>
-						<label htmlFor="mul">かけ算</label>
+						<label htmlFor="mul" className="is-size-7-mobile">
+							かけ算
+						</label>
 					</div>
 					{/* <p>{opes}</p> */}
 
@@ -148,7 +154,7 @@ function Main() {
 					>
 						<div
 							style={{ marginBottom: '0.7rem' }}
-							className={'problem' + (showError ? ' animate-wrong' : '')}
+							className={'problem  my-0' + (showError ? ' animate-wrong' : '')}
 						>
 							{cProblem.n1}{' '}
 							<span
@@ -160,7 +166,7 @@ function Main() {
 						</div>
 
 						<form onSubmit={handleSubmit}>
-							<div className="field has-addons has-addons-centered py-2">
+							<div className="field has-addons has-addons-centered py-1 my-0">
 								<div className="control">
 									<input
 										ref={answerField}
@@ -184,7 +190,9 @@ function Main() {
 							</div>
 						</form>
 
-						<p className="status">
+						<ProgressBar score={score} />
+
+						<p className="status mt-2">
 							あと、{' '}
 							<span
 								className={
@@ -194,7 +202,11 @@ function Main() {
 							>
 								{MAX_COUNT - score}
 							</span>{' '}
-							点 ゲット！（目標：{MAX_COUNT}点）
+							点 ゲット！
+							<br />
+							<span className="is-size-7-mobile">
+								（目標： {MAX_COUNT} 点）
+							</span>
 							<br />
 							まちがいは、あと{' '}
 							<span
@@ -207,8 +219,6 @@ function Main() {
 							</span>{' '}
 							回まで
 						</p>
-
-						<ProgressBar score={score} />
 					</div>
 
 					{/* overlay */}
