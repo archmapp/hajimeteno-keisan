@@ -274,8 +274,9 @@ function Main() {
 						<div className="overlay-inner has-background-danger-light box p-6">
 							<div className="end-message mb-3">
 								{score >= MAX_COUNT ? (
-									<div className="notification is-info pt-3 pb-2">
-										おめでとう！　 あなたの勝ちです。
+									<div className="notification is-info is-flex-desktop is-justify-content-center pt-3 pb-2">
+										<div>　おめでとう！　</div>
+										<div>あなたの勝ちです。</div>
 									</div>
 								) : (
 									<div className="notification is-warning pt-3 pb-2">
