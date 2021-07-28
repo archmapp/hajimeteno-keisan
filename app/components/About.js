@@ -77,6 +77,15 @@ const About = (props) => {
 			</div>
 
 			<div className="box has-background-white-bis has-text-centered mt-6 pt-6">
+				<h4
+					className="title has-text-weight-semibold has-tooltip-top has-tooltip-primary"
+					data-tooltip="Javascriptを使って"
+				>
+					<a href="https://www.archmapp.tech/" className="has-text-info-dark">
+						<small className="is-size-5">第二版・</small>
+						Bulmaと共に！
+					</a>
+				</h4>
 				<h4>
 					作成:　
 					<span className="has-text-weight-semibold has-text-success-dark">
