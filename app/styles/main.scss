@@ -1,11 +1,17 @@
 @import './bulma.min.css';
-@import './bulma-checkradio.min.css';
 @import './bulma-extensions.min.css';
+@import './bulma-checkradio.min.css';
+@import './bulma-tooltip.min.css';
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0;
 	color: #333;
+}
+
+.nlred {
+	background-color: #fff2e7;
+	// background-color: #ffcdd2;
 }
 
 #b-r {
@@ -96,7 +102,7 @@ body.overlay-is-open .main-ui,
 @keyframes showScore {
 	70% {
 		color: lightgreen;
-		// transform: scale(1.5);
+		transform: scale(1.2);
 	}
 
 	100% {
@@ -184,7 +190,6 @@ a.active {
 	border-radius: 8px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 // test
 .test {

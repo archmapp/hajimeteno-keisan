@@ -1,7 +1,6 @@
 // import * as $$ from '../js/shortJS'
 
 import React, { useState, useEffect, useRef } from 'react'
-import { useLocation } from 'react-router-dom'
 import ProgressBar from './ProgressBar'
 
 function Main() {
@@ -9,6 +8,7 @@ function Main() {
 
 	// ['+', '-', 'x']
 	const [opes, setOpes] = useState(['+', '-'])
+	const [nextStep, setNextStep] = useState(false)
 	const [score, setScore] = useState(0)
 	const [mistakes, setMistakes] = useState(0)
 	const answerField = useRef(null)
@@ -22,14 +22,22 @@ function Main() {
 	useEffect(() => {
 		const lS = JSON.parse(localStorage.getItem('opes'))
 		if (lS) setOpes(lS)
+	}, [])
 
-		// $$.qcL('#slide-main', 'active', 'add')
+	useEffect(() => {
+		const lS = JSON.parse(localStorage.getItem('nextStep'))
+		if (lS) setNextStep(lS)
 	}, [])
 
 	useEffect(() => {
 		localStorage.setItem('opes', JSON.stringify(opes))
 		resetGame()
 	}, [opes])
+
+	useEffect(() => {
+		localStorage.setItem('nextStep', JSON.stringify(nextStep))
+		resetGame()
+	}, [nextStep])
 
 	useEffect(() => {
 		if (score >= MAX_COUNT || mistakes == 3) {
@@ -50,7 +58,7 @@ function Main() {
 			$$.q('.btn-sel').removeAttribute('disabled')
 		}
 		return {
-			n1: generateNumber(10),
+			n1: generateNumber(nextStep ? 100 : 10),
 			n2: generateNumber(10),
 			operator: opes[generateNumber(opes.length - 1)],
 		}
@@ -101,53 +109,79 @@ function Main() {
 
 	return (
 		<>
-			<article className="message is-primary py-4" id="b-r">
+			<article
+				className={'message py-5 ' + (nextStep ? 'nlred' : 'is-primary')}
+				id="b-r"
+			>
 				<div>
-					<div className="field is-flex is-justify-content-center">
-						<div>
-							<input
-								type="checkbox"
-								className="is-checkradio has-background-color is-info"
-								id="add"
-								name="add"
-								value="+"
-								checked={opes.includes('+')}
-								onChange={handleOpeClick}
-							/>
-							<label htmlFor="add" className="is-size-7-mobile">
-								たし算
-							</label>
+					<div className="is-flex is-flex-direction-row is-justify-content-space-around mb-4">
+						<div className="is-flex is-flex-direction-row">
+							<div>
+								<input
+									type="checkbox"
+									className="is-checkradio has-background-color is-info"
+									id="add"
+									name="add"
+									value="+"
+									checked={opes.includes('+')}
+									onChange={handleOpeClick}
+								/>
+								<label htmlFor="add" className="is-size-7-mobile">
+									たし算
+								</label>
+							</div>
+							<div>
+								<input
+									type="checkbox"
+									className="is-checkradio has-background-color is-warning"
+									id="sub"
+									name="sub"
+									value="-"
+									checked={opes.includes('-')}
+									onChange={handleOpeClick}
+								/>
+								<label htmlFor="sub" className="is-size-7-mobile">
+									ひき算
+								</label>
+							</div>
+							<div>
+								<input
+									type="checkbox"
+									className="is-checkradio has-background-color is-danger"
+									id="mul"
+									name="mul"
+									value="x"
+									checked={opes.includes('x')}
+									onChange={handleOpeClick}
+								/>
+								<label htmlFor="mul" className="is-size-7-mobile">
+									かけ算
+								</label>
+							</div>
 						</div>
-						<div>
+						<div
+							className="field has-tooltip-bottom has-tooltip-warning"
+							data-tooltip="二桁の数をふくむ"
+						>
 							<input
 								type="checkbox"
-								className="is-checkradio has-background-color is-warning"
-								id="sub"
-								name="sub"
-								value="-"
-								checked={opes.includes('-')}
-								onChange={handleOpeClick}
+								className="switch is-outlined is-warning"
+								id="nextStep"
+								name="nextStep"
+								checked={nextStep}
+								onChange={() => setNextStep((prev) => !prev)}
 							/>
-							<label htmlFor="sub" className="is-size-7-mobile">
-								ひき算
-							</label>
-						</div>
-						<div>
-							<input
-								type="checkbox"
-								className="is-checkradio has-background-color is-danger"
-								id="mul"
-								name="mul"
-								value="x"
-								checked={opes.includes('x')}
-								onChange={handleOpeClick}
-							/>
-							<label htmlFor="mul" className="is-size-7-mobile">
-								かけ算
+							<label
+								htmlFor="nextStep"
+								className={nextStep ? 'has-text-weight-semibold' : ''}
+							>
+								次の一歩
 							</label>
 						</div>
 					</div>
 					{/* <p>{opes}</p> */}
+
+					<ProgressBar score={score} />
 
 					{/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
 					<div
@@ -194,8 +228,6 @@ function Main() {
 							</div>
 						</form>
 
-						<ProgressBar score={score} />
-
 						<p className="status mt-2">
 							あと、{' '}
 							<span
@@ -208,9 +240,10 @@ function Main() {
 							</span>{' '}
 							点 ゲット！
 							<br />
-							<span className="is-size-7-mobile">
-								（目標： {MAX_COUNT} 点）
+							<span className="is-size-6 is-size-7-mobile">
+								（ もくひょう： {MAX_COUNT} 点 ）
 							</span>
+							<br />
 							<br />
 							まちがいは、あと{' '}
 							<span

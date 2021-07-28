@@ -1,0 +1,40 @@
+      .nlred {
+        background-color: #ffcdd2;
+      }
+      .nlblue {
+        background-color: #bbdefb;
+      }
+      .nlgreen {
+        background-color: #c8e6c9;
+      }
+      .nlpurple {
+        background-color: #e1bee7;
+      }
+      .nlgray {
+        background-color: #d7ccc8;
+      }
+
+      //
+      .lred {
+        background-color: #fee;
+      }
+
+      .lyellow {
+        background-color: #ffa;
+      }
+
+      .lgreen {
+        background-color: #efb;
+      }
+
+      .lcyan {
+        background-color: #efe;
+      }
+
+      .lgray {
+        background-color: #eef;
+      }
+
+      .lblue {
+        background-color: #dff;
+      }
