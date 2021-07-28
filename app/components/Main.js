@@ -127,7 +127,7 @@ function Main() {
 									onChange={handleOpeClick}
 								/>
 								<label htmlFor="add" className="is-size-7-mobile">
-									たし算
+									足算
 								</label>
 							</div>
 							<div>
@@ -141,7 +141,7 @@ function Main() {
 									onChange={handleOpeClick}
 								/>
 								<label htmlFor="sub" className="is-size-7-mobile">
-									ひき算
+									引算
 								</label>
 							</div>
 							<div>
@@ -155,7 +155,7 @@ function Main() {
 									onChange={handleOpeClick}
 								/>
 								<label htmlFor="mul" className="is-size-7-mobile">
-									かけ算
+									掛算
 								</label>
 							</div>
 						</div>
@@ -173,7 +173,10 @@ function Main() {
 							/>
 							<label
 								htmlFor="nextStep"
-								className={nextStep ? 'has-text-weight-semibold' : ''}
+								className={
+									'is-size-7-mobile ' +
+									(nextStep ? 'has-text-weight-semibold' : '')
+								}
 							>
 								次の一歩
 							</label>
@@ -192,7 +195,10 @@ function Main() {
 					>
 						<div
 							style={{ marginBottom: '0.7rem' }}
-							className={'problem  my-0' + (showError ? ' animate-wrong' : '')}
+							className={
+								'problem is-size-1-touch my-0' +
+								(showError ? ' animate-wrong' : '')
+							}
 						>
 							{cProblem.n1}{' '}
 							<span

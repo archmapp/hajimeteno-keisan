@@ -41,7 +41,7 @@ function App() {
 								<NavLink to="/" exact ref={link0}>
 									たし算・ひき算・かけ算
 								</NavLink>
-								<NavLink to="/division">わり算</NavLink>
+								{/* <NavLink to="/division">わり算</NavLink> */}
 								<NavLink to="/about">お知らせ</NavLink>
 							</nav>
 							<SlideRoutes location={location} duration={500} className="mb-1">
