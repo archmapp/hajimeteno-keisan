@@ -234,7 +234,7 @@ function Main() {
 							</div>
 						</form>
 
-						<p className="status mt-2">
+						<div className="status mt-2">
 							あと、{' '}
 							<span
 								className={
@@ -249,19 +249,19 @@ function Main() {
 							<span className="is-size-6 is-size-7-mobile">
 								（ もくひょう： {MAX_COUNT} 点 ）
 							</span>
-							<br />
-							<br />
-							まちがいは、あと{' '}
-							<span
-								className={
-									'has-text-weight-bold is-inline-block' +
-									(showError ? ' animate-wrong' : '')
-								}
-							>
-								{2 - mistakes}
-							</span>{' '}
-							回まで
-						</p>
+							<div className="mt-touch">
+								まちがいは、あと{' '}
+								<span
+									className={
+										'has-text-weight-bold is-inline-block' +
+										(showError ? ' animate-wrong' : '')
+									}
+								>
+									{2 - mistakes}
+								</span>{' '}
+								回まで
+							</div>
+						</div>
 					</div>
 
 					{/* overlay */}

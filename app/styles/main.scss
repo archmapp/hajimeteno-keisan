@@ -203,3 +203,17 @@ a.active {
 	color: green;
 	font-size: large;
 }
+
+@media screen and (max-width: 1023px) {
+    .mt-touch {
+        color: rgb(255, 81, 0);
+				margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mt-touch {
+        color: rgb(255, 100, 0);
+				margin-top: 1rem;
+    }
+}
