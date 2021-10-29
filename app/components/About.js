@@ -32,6 +32,18 @@ const About = (props) => {
 								参考： ( YOUTUBE )
 								<div className="mt-3 ml-3">
 									<a
+										href="https://www.youtube.com/watch?v=EVze4Cq-dZ8"
+										className=""
+									>
+										<span className="is-size-6 has-text-success-dark ">
+											JavaScriptゲーム：CSSトランジションとアニメーション
+											<br />
+											を使用したインタラクティブな質問 へ 移動
+										</span>
+									</a>
+
+									<br />
+									<a
 										href="https://www.youtube.com/watch?v=eddzBlXBl3Y"
 										className=""
 									>
@@ -43,7 +55,7 @@ const About = (props) => {
 									<br />
 									<span className="has-text-black-ter ml-6">by </span>
 									<span className="is-size-5 has-text-primary-dark">
-										Brad LearnWebCode
+										Brad Schiff LearnWebCode
 									</span>
 								</div>
 							</div>
