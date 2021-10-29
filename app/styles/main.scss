@@ -9,6 +9,26 @@ body {
 	color: #333;
 }
 
+.level {
+	display: none;
+
+	@media (max-width: 960px) {
+		display: block;
+	}
+}
+
+.h_hero {
+	
+	@media screen and (max-width: 1023px) {
+		padding: 15px 30px;
+		// transform: translateY(-20px);
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 10px 10px;
+	}
+}
+
 .nlred {
 	background-color: #fff2e7;
 	// background-color: #ffcdd2;
@@ -64,6 +84,14 @@ body {
 	height: 40px;
 	border-right: 1px solid #c7c7c7;
 	flex: 1;
+
+	@media screen and (max-width: 1023px) {
+		height: 25px;
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 20px;
+	}
 }
 
 .overlay {
@@ -72,31 +100,40 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(255, 255, 255, 0.82);
+	background-color: rgba(255, 255, 255, 0.5);
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	opacity: 0;
+	// align-items: center;
+	align-items: flex-start;
+	// opacity: 0;
 	visibility: hidden;
+	// z-index: -1;
 	transition: all 0.33s ease-out;
 	transform: scale(1.2);
 }
 
 .overlay-inner {
 	text-align: center;
+	margin-top: 4px;;
 	max-width: 700px;
+	opacity: .95;
 }
 
 body.overlay-is-open .overlay,
 .overlay--visible {
-	opacity: 1;
+	// opacity: 1;
 	visibility: visible;
 	transform: scale(1);
 }
 
 body.overlay-is-open .main-ui,
 .blurred {
-	filter: blur(4px);
+	filter: blur(0px);
+	// ある要素にぼかし（ブラー）効果を付けるには、filterプロパティのblur関数を使用します。
+	// ※ 入れ子になっている要素を含めて効果がかかります。
+	// ぼかし（ブラー）は要素のふちから外側と内側の両方に広がりが発生します。
+	// 【構文】
+	// filter:blur(ぼかし距離);
 }
 
 @keyframes showScore {
@@ -204,16 +241,14 @@ a.active {
 	font-size: large;
 }
 
-@media screen and (max-width: 1023px) {
-    .mt-touch {
-        color: rgb(255, 81, 0);
-				margin-top: 0px;
-    }
-}
+.mt-touch {
+	color: rgb(255, 81, 0);
 
-@media screen and (min-width: 1024px) {
-    .mt-touch {
-        color: rgb(255, 100, 0);
-				margin-top: 1rem;
-    }
+	@media screen and (max-width: 1023px) {
+		margin-top: 0px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		margin-top: 1rem;
+	}
 }

@@ -1,0 +1,33 @@
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\Memory game\mp3\システム29.mp3
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\Memory game\mp3\システム37.mp3
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\Memory game\mp3\システム45.mp3
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\Memory game\mp3\システム46.mp3
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\Memory game\Memory game.txt
+
+
+神経衰弱は英語で 
+  "Memory game" や "matching game" 
+
+  
+  効果音をプログラムに組み込むため、mp3ファイルをbase64文字列に変換
+  「mp3　base64　変換」
+      https://monoocean.com/2016/11/17/sound-effect-play/
+
+
+[mp3] 他
+https://www.wareko.jp/blog/play-audio-files-on-website-or-embed-with-base64-encoding
+
+
+  <audio controls="controls" autoplay>
+    <source src="https://www.wareko.jp/home/SoundManager2/sound_waves/028-Cat-meow/Cat-meow.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+  </audio>
+
+
+https://webukatu.com/wordpress/blog/11055/
+
+  music.volume = 音量;
+      音量は0.0（最小）から1.0（最大）の間で指定
+
+  controlsプロパティは
+    ユーザーインターフェース（再生ボタン、音量調整バーなど）を表示するかどうかを指定するプロパティ

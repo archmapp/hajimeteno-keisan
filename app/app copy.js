@@ -29,30 +29,59 @@ function App() {
 
 	return (
 		<>
-			<section className="section pt-0">
+			<section className="section mt-0 pt-0">
 				<div className="container">
 					<div className="columns">
-						<div className="column"></div>
-						<div className="column is-size-6 is-10">
-							<div className="hero is-primary is-bold">
-								<div className="hero-body h_hero">
-									<div className="is-flex is-justify-content-space-between is-align-items-center">
-										<h1 className="is-size-4-tablet is-size-3-desktop">
+						<div className="column mt-0 pt-0"></div>
+						<div className="column is-size-6 is-10 mt-0 pt-0">
+							<div className="card">
+								<header className="card-header has-background-primary">
+									<div className="card-header-title is-flex is-justify-content-space-between is-align-items-cente">
+										<div className="title is-size-6-mobile">
 											初めての【 けいさん 】
-										</h1>
-										<h1 className="is-size-6-mobile">
+										</div>
+										<div className="is-size-6-mobile">
 											<span className="subtitle is-size-6-mobile">
-												<button
-													type="button"
-													className="button is-info has-tooltip-bottom has-tooltip-warning"
-													data-tooltip="しんけいすいじゃく作成中"
-												>ゲーム</button>
+												<a href="mailto:archmapp@i.softbank.jp">トランプ</a>
 											</span>
-										</h1>
+										</div>
 									</div>
+									<a
+										href="#0"
+										className="card-header-icon"
+										aria-label="More options"
+									>
+										<span className="icon">
+											<i className="fas fa-angle-down"></i>
+										</span>
+									</a>
+								</header>
+
+								<div className="card-content pt-1">
+									<nav className="is-size-7-mobile my-2 px-2 pt-1">
+										<NavLink to="/" exact ref={link0}>
+											たし算・ひき算・かけ算
+										</NavLink>
+										{/* <NavLink to="/division">わり算</NavLink> */}
+										<NavLink to="/about">お知らせ</NavLink>
+									</nav>
 								</div>
 							</div>
 
+							<div className="hero is-primary is-bold h_hero">
+								<div className="hero-body">
+									<div className="container is-flex is-justify-content-space-around">
+										<h1 className="title is-size-6-mobile">
+											初めての【 けいさん 】
+										</h1>
+										<h2 className="is-size-6-mobile">
+											<span className="subtitle is-size-6-mobile">
+												<a href="mailto:archmapp@i.softbank.jp">トランプ</a>
+											</span>
+										</h2>
+									</div>
+								</div>
+							</div>
 							<nav className="is-size-7-mobile my-2 px-2 pt-1">
 								<NavLink to="/" exact ref={link0}>
 									たし算・ひき算・かけ算
