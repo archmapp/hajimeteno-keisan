@@ -31,29 +31,33 @@ const About = (props) => {
 							<div className="is-size-6 has-text-black-ter">
 								参考： ( YOUTUBE )
 								<div className="mt-3 ml-3">
-									<a
-										href="https://www.youtube.com/watch?v=EVze4Cq-dZ8"
-										className=""
-									>
-										<span className="is-size-6 has-text-success-dark ">
-											JavaScriptゲーム：CSSトランジションとアニメーション
-											<br />
-											を使用したインタラクティブな質問 へ 移動
-										</span>
-									</a>
+									<ul>
+										<li>
+											<a
+												href="https://www.youtube.com/watch?v=EVze4Cq-dZ8"
+												className=""
+											>
+												<span className="is-size-6 has-text-success-dark ">
+													JavaScriptゲーム：CSSトランジションとアニメーション
+													<br />
+													を使用したインタラクティブな質問 へ 移動
+												</span>
+											</a>
+										</li>
+										<li>
+											<a
+												href="https://www.youtube.com/watch?v=eddzBlXBl3Y"
+												className=""
+											>
+												<span className="is-size-6 has-text-success-dark ">
+													React (Babel) and Sass webpack Tutorial へ 移動
+												</span>
+											</a>
+										</li>
+									</ul>
 
 									<br />
-									<a
-										href="https://www.youtube.com/watch?v=eddzBlXBl3Y"
-										className=""
-									>
-										<span className="is-size-6 has-text-success-dark ">
-											React (Babel) and Sass webpack Tutorial へ 移動
-										</span>
-									</a>
-
-									<br />
-									<span className="has-text-black-ter ml-6">by </span>
+									<span className="has-text-black-ter ml-6">by &nbsp;</span>
 									<span className="is-size-5 has-text-primary-dark">
 										Brad Schiff LearnWebCode
 									</span>
@@ -67,17 +71,20 @@ const About = (props) => {
 							<div className="is-size-6 has-text-black-ter">
 								参考： ( YOUTUBE )
 								<div className="mt-3 ml-3">
-									<a
-										href="https://www.youtube.com/watch?v=w7ejDZ8SWv8"
-										className=""
-									>
-										<span className="is-size-6 has-text-success-dark ">
-											React JS Crash Course 2021 へ 移動
-										</span>
-									</a>
+									<ul>
+										<li>
+											<a
+												href="https://www.youtube.com/watch?v=w7ejDZ8SWv8"
+												className=""
+											>
+												<span className="is-size-6 has-text-success-dark ">
+													React JS Crash Course 2021 へ 移動
+												</span>
+											</a>
+										</li>
+									</ul>
 
-									<br />
-									<span className="has-text-black-ter ml-6">by </span>
+									<span className="has-text-black-ter ml-6">by &nbsp;</span>
 									<span className="has-text-primary-dark has-text-weight-bold is-size-5 mt-4">
 										Brad Traversy Media
 									</span>
