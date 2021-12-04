@@ -410,3 +410,6 @@ export const d_rH = (na, html) => {
 		rH(na, html)
 	})
 }
+
+
+export default { Id, oe, qcL, qcLm, ocLm }

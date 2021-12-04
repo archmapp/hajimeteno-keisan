@@ -10,7 +10,8 @@ import SlideRoutes from 'react-slide-routes'
 import React, { useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
+	// BrowserRouter as Router,
 	Route,
 	NavLink,
 	useLocation,
@@ -40,7 +41,7 @@ function App() {
 										<h1 className="is-size-4-tablet is-size-3-desktop">
 											初めての【 けいさん 】
 										</h1>
-										<h1 className="is-size-6-mobile">
+										{/* <h1 className="is-size-6-mobile">
 											<span className="subtitle is-size-6-mobile">
 												<button
 													type="button"
@@ -48,7 +49,7 @@ function App() {
 													data-tooltip="しんけいすいじゃく作成中"
 												>ゲーム</button>
 											</span>
-										</h1>
+										</h1> */}
 									</div>
 								</div>
 							</div>
@@ -57,12 +58,10 @@ function App() {
 								<NavLink to="/" exact ref={link0}>
 									たし算・ひき算・かけ算
 								</NavLink>
-								{/* <NavLink to="/division">わり算</NavLink> */}
 								<NavLink to="/about">お知らせ</NavLink>
 							</nav>
 							<SlideRoutes location={location} duration={500} className="mb-1">
 								<Route path="/" exact component={Main} className="active" />
-								<Route path="/division" component={About} />
 								<Route path="/about" component={About} />
 								<Route component={Main} />
 							</SlideRoutes>

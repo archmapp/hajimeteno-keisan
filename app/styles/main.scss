@@ -267,3 +267,23 @@ nav a.active {
 		margin-top: 1rem;
 	}
 }
+
+
+#orderB {
+  background-color: #666;
+
+	@media screen and (max-width: 400px) {
+		font-size: 0.8rem;
+	}
+}
+
+
+.quickview-body .message-body ul {
+  line-height: 1.4rem;
+}
+
+@media screen and (max-width: 420px) {
+  .quickview-body .message-body ul {
+    font-size: 0.5rem;
+  }
+}

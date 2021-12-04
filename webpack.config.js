@@ -25,14 +25,21 @@ let config = {
 	devServer: {
 		// before: function (app, server) {
 		// 	server._watch('./src/sub/**/*.html')
+		// 	server._watch('./app/**/*.html')
 		// },
 		// contentBase: 'docs',
 		contentBase: path.join(__dirname, 'docs'),
 		open: true,
 		hot: true,
 		writeToDisk: true,
-		port: 3001,
+		// port: 8080,
+		// host: '192.168.10.102',
 		host: '0.0.0.0',
+		useLocalIp: true
+		// disableHostCheck: true,
+		// public: 'localhost:8080',
+		// port: 3001,
+		// host: '0.0.0.0',
 	},
 
 	module: {

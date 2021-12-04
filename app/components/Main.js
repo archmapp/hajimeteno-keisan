@@ -8,7 +8,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import ProgressBar from './ProgressBar'
-
+import QuickView from './utils/QuickView'
 // import AudioMp3, {music} from './utils/AudioMp3'
 
 function Main() {
@@ -288,6 +288,25 @@ function Main() {
 							</div>
 						</div>
 					</div>
+
+					<nav id="orderB" className="mt-6">
+						<div className="is-flex is-justify-content-center is-align-items-center py-2 ">
+							{/* <div className="is-flex is-justify-content-center is-align-items-center has-background-grey py-2 "> */}
+							<button
+								className="button is-primary has-tooltip-top has-tooltip-warning"
+								data-tooltip="トグル: [Escape]キーも可"
+								id="quick"
+							>
+								ゲーム一覧
+							</button>
+							<span className="has-text-white ml-5">
+								そのほかの ゲームアプリ
+							</span>
+						</div>
+					</nav>
+
+					<QuickView />
+
 
 					{/* overlay */}
 					<div
