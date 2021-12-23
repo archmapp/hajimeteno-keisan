@@ -66,7 +66,7 @@ function QuickView() {
 											</tr>
 											<tr>
 												<th className="has-text-right is-flex-grow-5">
-													<a href="https://archmapp.github.io/ippatsu/">
+													<a href="https://flashcard2.netlify.app">
 														一発勝負 <span style={{ color: 'red' }}>❣</span>
 													</a>
 												</th>
