@@ -75,6 +75,16 @@ function QuickView() {
 												</td>
 											</tr>
 											<tr>
+												<th className="has-text-right is-flex-grow-5 is-size-6">
+													<a href="https://archtictactoe.netlify.app/">
+														ティック・タック・トゥ
+													</a>
+												</th>
+												<td className="td_boxes is-size-7 is-flex-grow-4">
+													三目並べ
+												</td>
+											</tr>
+											<tr>
 												<th className="has-text-right is-flex-grow-5">
 													<a href="https://space-game2.netlify.app">
 														いん石を狙え <span style={{ color: 'red' }}>❣</span>
@@ -101,7 +111,7 @@ function QuickView() {
 											<span className="has-background-primary has-text-white">
 												ゲーム一覧
 											</span>
-											］ボタンをクリックして開く
+											］ボタンをクリック
 										</li>
 										<li>
 											[

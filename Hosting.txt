@@ -1,0 +1,100 @@
+hajimeteno-keisan はうまくいかない。
+
+
+npm i -g firebase-tools
+
+firebase login
+
+  (firebase projects:list)
+
+firebase login:ci
+
+  [firebase logout --token TOKEN コマンド]
+
+CLI を使用して実行される多くの一般的なタスク（Firebase プロジェクトへのデプロイなど）には、プロジェクト ディレクトリが必要です。プロジェクト ディレクトリを設定するには、firebase init コマンドを使用します。プロジェクト ディレクトリは通常、ソース管理のルートと同じディレクトリであり、firebase init の実行後、ディレクトリには firebase.json 構成ファイルが格納されます。
+
+新しい Firebase プロジェクトを初期化するには、アプリのディレクトリ内から次のコマンドを実行します。
+
+firebase init
+
+firebase init コマンドを実行すると、プロジェクト ディレクトリといくつかの Firebase プロダクトを順番に設定できます。プロジェクトの初期化中に、Firebase CLI から次のタスクを完了するように求められます。
+
+Firebaseプロジェクトで設定する Firebaseプロダクトを選択する。
+
+選択したプロダクトで特定のファイルを構成するように求められます。構成の詳細については、プロダクト（Hosting など）のドキュメントをご覧ください。後で firebase init を実行して別の Firebase プロダクトを設定することもできます。
+
+デフォルトの Firebase プロジェクトを選択する。
+
+このステップにより、プロジェクト固有のコマンド（firebase deploy など）が適切な Firebaseプロジェクトに対して実行されるように、現在のプロジェクトディレクトリ
+  が Firebaseプロジェクトに関連付けられます。
+
+また、同じプロジェクトディレクトリに複数の Firebase プロジェクトを関連付ける
+こともできます（ステージング プロジェクトと本番環境プロジェクトなど）。
+
+初期化の最後に、Firebase は次の 2つのファイルを自動的に作成し、
+ローカルアプリ ディレクトリのルートに追加します。
+
+プロジェクトの構成を含む firebase.json 構成ファイル。
+
+
+firebase hosting:disable  <===> firebase deploy
+
+
+
+shinkeisuijakuNinja
+
+firebase login
+firebase init
+    エラーが出たときは、
+    firebase logout
+    firebase login
+
+firebase use shinkeisuijakuninja
+✖　firebase use hajimeteno-keisan-7
+    firebase.json 構成ファイルにサイト ID を追加
+    "site": "shinkeisuijakuninja",
+    ✖　"site": "hajimeteno-keisan",
+
+firebase deploy
+✖　firebase deploy --only hosting:hajimeteno-keisan
+   Deploy complete!
+
+    Project Console: https://console.firebase.google.com/project/shinkeisuijakuninja/overview
+    Hosting URL: https://shinkeisuijakuninja.web.app
+    Hosting URL: https://shinkeisuijakuninja.firebaseapp.com/
+
+     Deploy complete!
+    Project Console: https://console.firebase.google.com/project/shinkeisuijakuninja/overview
+    ✖　Hosting URL: https://hajimeteno-keisan.web.app
+
+
+
+
+firebase init
+
+[firebase.json]
+{
+  "hosting": {
+    "site": "ippatsu",
+    "public": "build",
+  Deploy complete!
+
+firebase deploy --only hosting:ippatsu (プロジェクト名)
+firebase deploy --only hosting:hajimeteno-keisan
+ (プロジェクト名)
+firebase deploy --only hosting:space-game-meteor
+
+    Project Console: https://console.firebase.google.com/project/ippatsu-e3ac2/overview
+    Hosting URL: https://ippatsu.web.app
+
+
+
+{
+  "hosting": {
+    "site": "space-game-meteor",
+    "public": "build",
+
+Deploy complete!
+
+Project Console: https://console.firebase.google.com/project/space-game-7/overview
+Hosting URL: https://space-game-meteor.web.app

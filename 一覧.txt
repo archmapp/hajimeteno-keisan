@@ -1,0 +1,101 @@
+git remote -v
+
+
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJS\src\index.html
+https://archmapp2.github.io/bulmaJS/index.html
+初回 Bulma Project
+Bulma入門 javascript Handlebars Electron Angular React
+
+
+
+
+✖　C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\1\app\index.html
+✖　https://www.archmapp.tech/
+✖　第二版・Bulmaと共に！
+✖　Bulma・React入門 javascript
+✖　https://github.com/archmapp/bulmaJSR.git
+
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\netlify.txt
+https://bulmajsr.netlify.app
+https://www.archmapp.tech/
+
+[ドメインの設定]
+  お名前.com と Netlify　両方に設定
+
+
+    "netlify": "netlify deploy",
+    "netlify-prod": "netlify deploy --prod",
+
+
+npm run netlify
+npm run netlify-prod
+? Publish docs
+? Publish directory C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\docs
+Deploy path: C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJSR\docs
+
+Website URL:       https://bulmajsr.netlify.app
+
+
+
+
+
+
+C:\Users\Owner\Desktop\Nodejs\Bulma\CompanyWebsite\index.html
+https://archmapp.github.io/about2/
+会社 履歴 コンピューター教育 ゲーム react Bulma
+https://github.com/archmapp/about2.git
+
+
+C:\Users\Owner\Desktop\Nodejs\mean\BradWebpack\BRAD_react-sass-webpack\2 route slide\app
+https://www.archmapp.tech/
+https://affectionate-wozniak-de01a2.netlify.app
+初めての【 けいさん 】 たし算・ひき算・かけ算
+https://github.com/archmapp/hajimeteno-keisan.git
+
+
+C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard\public\index.html
+✖　https://archmapp.github.io/ippatsu/
+✖　github(https://archmapp.github.io/ippatsu/)
+一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
+https://github.com/archmapp/ippatsu.git
+
+C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard_Netlify2\public\index.html
+https://flashcard2.netlify.app
+一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
+https://app.netlify.com/sites/flashcard2/overview
+
+
+C:\Users\Owner\Desktop\Nodejs\ReactN\Ninja\public\index.html
+https://jolly-lamport-67e201.netlify.app/
+記憶ゲーム しんけいすいじゃく react Bulma 忍者
+https://github.com/archmapp/memory-game.git
+
+
+C:\Users\Owner\Desktop\Nodejs\React\TUTORIALS\react-tic-tac-toe-hooks-master
+Unique Deploy URL: https://622372b5f160c80f1e61fddf--archtictactoe.netlify.app
+Website URL:       https://archtictactoe.netlify.app
+ティック・タック・トゥ Tic Tac Toe 
+
+
+
+C:\Users\Owner\Desktop\Nodejs\React\game\Space-Game-master
+いん石を狙え
+Website URL:   https://space-game2.netlify.app
+
+太陽系
+C:\Users\Owner\Desktop\Nodejs\css\CSS\animations\太陽系.html
+C:\Users\Owner\Desktop\Nodejs\css\CSS\animations\太陽系2.html
+https://archmapp.github.io/html/
+https://archmapp.github.io/html/%E5%A4%AA%E9%99%BD%E7%B3%BB2.html
+https://archmapp.github.io/html/太陽系2.html
+  git remote -v
+  origin  https://github.com/archmapp/html.git (fetch)
+  origin  https://github.com/archmapp/html.git (push)
+
+
+
+
+
+
+C:\Users\Owner\Desktop\Nodejs\Bulma\bulmaJS\src\sub\flex\Diagram.html
+https://archmapp2.github.io/bulmaJS/src/sub/flex/Diagram.html
