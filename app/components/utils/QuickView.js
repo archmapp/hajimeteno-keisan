@@ -94,11 +94,21 @@ function QuickView() {
 													宇宙の旅
 												</td>
 											</tr>
+											<tr>
+												<th className="has-text-right is-flex-grow-5">
+													<a href="https://isnt-archmapp-awesome.netlify.app/">
+														にゃんにゃん動画
+													</a>
+												</th>
+												<td className="td_boxes is-size-7 is-flex-grow-4">
+													ワンワン画像
+												</td>
+											</tr>
 										</tbody>
 									</table>
 								</div>
 							</article>
-							<article className="message is-primary mt-3">
+							{/* <article className="message is-primary mt-3">
 								<div className="message-header py-2 is-justify-content-center">
 									<p className="is-size-7">
 										<span>このビューの開閉について (トグル操作)</span>
@@ -122,7 +132,7 @@ function QuickView() {
 										</li>
 									</ul>
 								</div>
-							</article>
+							</article> */}
 						</div>
 						<footer className="quickview-footer has-background-primary mt-4 mt-2 pb-3">
 							<div
