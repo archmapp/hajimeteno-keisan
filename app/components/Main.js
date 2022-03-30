@@ -7,6 +7,11 @@
 // import * as $$ from '../js/shortJS'
 
 import React, { useState, useEffect, useRef } from 'react'
+
+import Q1 from '../assets/QRcode/QR_sansuu50.png'
+import Q2 from '../assets/QRcode/QR_sansuu50.png'
+import Q3 from '../assets/QRcode/QR_ippatu111.png'
+
 import ProgressBar from './ProgressBar'
 import QuickView from './utils/QuickView'
 // import AudioMp3, {music} from './utils/AudioMp3'
@@ -304,9 +309,22 @@ function Main() {
 							</span>
 						</div>
 					</nav>
+					<div className="is-flex is-justify-content-space-around has-background-info-light px-2 pt-5">
+						<figure>
+							<figcaption>さんすう入門</figcaption>
+							<img src={Q1} alt="URL: QR_sansuu50.png" />
+						</figure>
+						<figure className="f430_Q2">
+							<figcaption>しんけいすいじゃく</figcaption>
+							<img src={Q2} alt="URL: QR_ninja50.png" />
+						</figure>
+						<figure className="f430_Q3">
+							<figcaption>一発勝負 </figcaption>
+							<img src={Q3} alt="URL: QR_ippatu111.png" />
+						</figure>
+					</div>
 
 					<QuickView />
-
 
 					{/* overlay */}
 					<div

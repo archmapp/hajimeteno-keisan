@@ -67,15 +67,21 @@ C:\Users\Owner\Desktop\Nodejs\mean\BradWebpack\BRAD_react-sass-webpack\2 route s
 https://www.archmapp.tech/
 https://affectionate-wozniak-de01a2.netlify.app
 初めての【 けいさん 】 たし算・ひき算・かけ算
-https://github.com/archmapp/hajimeteno-keisan
 https://archmapp.github.io/hajimeteno-keisan/
+[github]
+\2 route slide>npm run build ==> docs/
+\2 route slide>git add .
+\2 route slide>git commit -m "nyan-nyan"
+\2 route slide>git push origin main
 https://github.com/archmapp/hajimeteno-keisan.git
-  npm run build
+
+[netlify]
+  npm run build ==> docs/
   npm run netlify-prod
       > webpack@1.0.0 netlify-prod
       > netlify deploy --prod
 
-      This folder isn't linked to a site yet
+      (This folder isn't linked to a site yet)
       ? What would you like to do? ==> Link this directory to an existing site
       Adding local .netlify folder to .gitignore file...
 
