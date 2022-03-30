@@ -9,7 +9,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 import Q1 from '../assets/QRcode/QR_sansuu50.png'
-import Q2 from '../assets/QRcode/QR_sansuu50.png'
+import Q2 from '../assets/QRcode/QR_ninja50.png'
 import Q3 from '../assets/QRcode/QR_ippatu111.png'
 
 import ProgressBar from './ProgressBar'
