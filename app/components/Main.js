@@ -324,6 +324,25 @@ function Main() {
 						</figure>
 					</div>
 
+					<hr />
+					<div
+						className="has-background-grey-darker py-2 mt-6 f_center"
+						style={{'width': '100%'}}
+					>
+						<div className="is-size-5 has-text-danger has-tooltip-top px-3">
+							PWA機能対応版
+						</div>
+						<span>
+							<a
+								href="https://archmapp77.github.io/archmapp77-quickview/"
+								className="is-size-6 has-text-white has-tooltip-warning"
+								data-tooltip="インストール可能"
+							>
+								はこちら
+							</a>
+						</span>
+					</div>
+
 					<QuickView />
 
 					{/* overlay */}

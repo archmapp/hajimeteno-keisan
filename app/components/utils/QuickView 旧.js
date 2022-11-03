@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './QuickView.css'
 
 import $$ from '../../js/shortJS'
@@ -22,7 +22,7 @@ function QuickView() {
 	return (
 		<>
 			<article>
-				<div className="quickview quickT" style={{ overflowY: 'scroll' }}>
+				<div className="quickview quickT">
 					{/* <div id="quickviewDefault" className="quickview quickT my-1"> */}
 					{/* <div className="box has-background-primary p-2"> */}
 					<div className="box p-2" style={{ backgroundColor: '#375A7F' }}>
@@ -41,7 +41,7 @@ function QuickView() {
 								<div className="message-header pb-1">
 									<p>リンク先</p>
 								</div>
-								<div className="message-body is-size-6 py-2 px-0 is-flex is-justify-content-center">
+								<div className="message-body is-size-6 py-2 px-0">
 									<table className="table is-hoverable">
 										<tbody>
 											<tr>
@@ -96,32 +96,12 @@ function QuickView() {
 											</tr>
 											<tr>
 												<th className="has-text-right is-flex-grow-5">
-													<a href="https://nyan-gules.vercel.app/">
-														にゃんにゃん動画
-													</a>
-												</th>
-												<td className="td_boxes is-size-7 is-flex-grow-4 has-text-danger">
-													Next.js 版
-												</td>
-											</tr>
-											<tr>
-												<th className="has-text-right is-flex-grow-5">
 													<a href="https://isnt-archmapp-awesome.netlify.app/">
 														にゃんにゃん動画
 													</a>
 												</th>
 												<td className="td_boxes is-size-7 is-flex-grow-4">
-													旧版
-												</td>
-											</tr>
-											<tr>
-												<th className="has-text-right is-flex-grow-5">
-													<a href="https://nextjs-pokemon-kappa.vercel.app/">
-														ポケモン画像一覧
-													</a>
-												</th>
-												<td className="td_boxes is-size-7 is-flex-grow-4 has-text-danger">
-													Next.js 版
+													ワンワン画像
 												</td>
 											</tr>
 										</tbody>
@@ -165,8 +145,8 @@ function QuickView() {
 									</h6>
 									<p>
 										<a href="http://www.archmapp.tech/">
-											<strong className="is-success px-3">
-												第三版・Bulmaと共に！
+											<strong className="is-success">
+												第二版・Bulmaと共に！
 											</strong>
 										</a>
 									</p>
@@ -175,7 +155,7 @@ function QuickView() {
 											className="is-size-5 px-2 mt-2 mb-3"
 											style={{ background: '#e3c800' }}
 										>
-											Next.js 予定
+											Bulma Project
 										</strong>
 										<p className="mt-3">北九州</p>
 

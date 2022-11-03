@@ -92,6 +92,13 @@ https://github.com/archmapp/hajimeteno-keisan.git
 Unique Deploy URL: https://624319d177d2b51f2d814c31--affectionate-wozniak-de01a2.netlify.app
 Website URL:       https://affectionate-wozniak-de01a2.netlify.app  
 
+[エラー発生]
+  webpack-dev-server
+  Error: Cannot find module 'webpack-cli/bin/config-yargs'
+
+  webpack serve　OK！
+  webpack-cli４以降は「webpack-dev-server」コマンドが使えなくなり、4以降は「webpack serve」コマンドにする必要があるようでした。
+
 
 
 
@@ -101,8 +108,7 @@ C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard\public\index.html
 一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
 https://github.com/archmapp/ippatsu.git
 
-C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard_Netlify2\public\index.html
-https://flashcard2.netlify.app
+C:\Users\Owner\Desktop\Nodejs\React\Kyle-React-Flashcard_Netlify2\
 一発勝負❣ トランプゲーム 記憶ゲーム react Bulma
 https://app.netlify.com/sites/flashcard2/overview
 
@@ -124,10 +130,14 @@ C:\Users\Owner\Desktop\Nodejs\React\game\Space-Game-master
 Website URL:   https://space-game2.netlify.app
 
 
+C:\Users\Owner\Desktop\Nodejs\ReactNext\nextjs-blog\Bulma\games\nyan\
+URL: https://isnt-archmapp-awesome.netlify.app/
+にゃんにゃん動画のご紹介　Next.js 版
+
 C:\Users\Owner\Desktop\Nodejs\React\codesandbox\cs1\react-bulma1\redux-toolkit-cat
 Unique Deploy URL: https://624312fd60dede0f77ccb341--isnt-archmapp-awesome.netlify.app
 Website URL:       https://isnt-archmapp-awesome.netlify.app/
-にゃんにゃん動画のご紹介　ワンワン
+にゃんにゃん動画のご紹介　旧版
 
 
 
