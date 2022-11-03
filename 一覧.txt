@@ -71,7 +71,7 @@ https://archmapp.github.io/hajimeteno-keisan/
 [github]
 \2 route slide>npm run build ==> docs/
 \2 route slide>git add .
-\2 route slide>git commit -m "nyan-nyan"
+\2 route slide>git commit -m "hajimeteno-keisan"
 \2 route slide>git push origin main
 https://github.com/archmapp/hajimeteno-keisan.git
 
